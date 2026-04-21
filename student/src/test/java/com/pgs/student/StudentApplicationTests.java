@@ -1,10 +1,10 @@
-package com.pgs.discovery;
+package com.pgs.student;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DiscoveryApplicationTests {
+class StudentApplicationTests {
 
 	@Test
 	void contextLoads() {
