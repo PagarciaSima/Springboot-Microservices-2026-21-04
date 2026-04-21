@@ -1,0 +1,13 @@
+# Eclipse / STS específico
+.metadata/
+.project
+.settings/
+.classpath
+bin/
+
+# Maven
+target/
+
+# IntelliJ (por si acaso cambias de IDE)
+.idea/
+*.iml
