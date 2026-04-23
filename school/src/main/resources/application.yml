@@ -8,6 +8,8 @@ eureka:
 
 server:
   port: 8070
+students:
+  url: http://localhost:8090/api/v1/students
 spring:
   application:
     name: schools
@@ -15,7 +17,7 @@ spring:
     import: optional:configserver:http://localhost:8888
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/schools
+    url: jdbc:postgresql://localhost:5432/school
     username: username
     password: password
   jpa:
@@ -23,3 +25,7 @@ spring:
       ddl-auto: update
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+    
+application:
+  config:
+    students-url: http://localhost:8090/api/v1/students

@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "application.config.url",
+    "type": "java.lang.String",
+    "description": "A description for 'application.config.url'"
+  },
+  {
+    "name": "application.config.url",
+    "type": "java.lang.String",
+    "description": "A description for 'application.config.url'"
+  },
+  {
+    "name": "students.url",
+    "type": "java.lang.String",
+    "description": "A description for 'students.url'"
+  },
+  {
+    "name": "application.config.students-url",
+    "type": "java.lang.String",
+    "description": "A description for 'application.config.students-url'"
+  }
+]}
