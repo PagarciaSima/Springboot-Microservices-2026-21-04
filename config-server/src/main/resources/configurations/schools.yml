@@ -1,0 +1,36 @@
+
+# Eureka client configuration
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+# Server configuration
+server:
+  port: 8070
+  
+# Students service URL
+students:
+  url: http://localhost:8090/api/v1/students
+  
+# Spring application and database configuration
+spring:
+  # Database connection settings
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/school
+    username: username
+    password: password
+  # JPA and Hibernate settings
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    
+# Application-specific configuration (url through gateway)
+application:
+  config:
+    students-url: http://localhost:8222/api/v1/students
