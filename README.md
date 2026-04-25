@@ -4,7 +4,7 @@ This project demonstrates a simple microservices architecture using Spring Boot,
 
 ## Architecture Overview
 
-![Architecture Diagram](img/architecture.png)
+![Architecture Diagram](img/arc.png)
 
 - **API Gateway**: Entry point for all client requests. Routes traffic to the appropriate microservice.
 - **Student Service**: Manages student data and operations. Connects to its own PostgreSQL database.
