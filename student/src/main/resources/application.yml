@@ -1,9 +1,5 @@
-
-# Spring application and database configuration
 spring:
   application:
     name: students
-  # Config server import
   config:
     import: optional:configserver:http://localhost:8888
-

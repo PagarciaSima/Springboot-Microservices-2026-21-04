@@ -1,9 +1,5 @@
-
 spring:
   application:
     name: schools
-    
-  # Config server import
   config:
     import: optional:configserver:http://localhost:8888
-  
