@@ -1,0 +1,407 @@
+{
+  "info": {
+    "_postman_id": "9cd8c2c6-62f3-4692-bc2c-55eb99296f48",
+    "name": "Micro-04-26",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "27783092"
+  },
+  "item": [
+    {
+      "name": "Gateway_Endpoints",
+      "item": [
+        {
+          "name": "SCHOOL",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\":\"School 4\",\r\n    \"email\": \"school4@example.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8222/api/v1/schools",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8222",
+              "path": [
+                "api",
+                "v1",
+                "schools"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "STUDENT",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"firstname\": \"Maria\",\r\n    \"lastname\": \"García\",\r\n    \"email\": \"maria.garcia@email.com\",\r\n    \"schoolId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8222/api/v1/students",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8222",
+              "path": [
+                "api",
+                "v1",
+                "students"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "SCHOOLS",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\":\"School 3\",\r\n    \"email\": \"school3@example.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8222/api/v1/schools",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8222",
+              "path": [
+                "api",
+                "v1",
+                "schools"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "SCHOOLS_WITH_STUDENTS",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\":\"School 3\",\r\n    \"email\": \"school3@example.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8222/api/v1/schools/with-students/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8222",
+              "path": [
+                "api",
+                "v1",
+                "schools",
+                "with-students",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "STUDENTS",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"firstname\": \"Pablo\",\r\n    \"lastname\": \"García\",\r\n    \"email\": \"pablo.garcia@email.com\",\r\n    \"schoolId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8222/api/v1/students",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8222",
+              "path": [
+                "api",
+                "v1",
+                "students"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "STUDENTS_SCHOOL_ID",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"firstname\": \"Pablo\",\r\n    \"lastname\": \"García\",\r\n    \"email\": \"pablo.garcia@email.com\",\r\n    \"schoolId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8222/api/v1/students/school/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8222",
+              "path": [
+                "api",
+                "v1",
+                "students",
+                "school",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "SCHOOL",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"School 3\",\r\n    \"email\": \"school3@example.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8070/api/v1/schools",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8070",
+          "path": [
+            "api",
+            "v1",
+            "schools"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "STUDENT",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstname\": \"Pablo\",\r\n    \"lastname\": \"García\",\r\n    \"email\": \"pablo.garcia@email.com\",\r\n    \"schoolId\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8090/api/v1/students",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "api",
+            "v1",
+            "students"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "SCHOOLS",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"School 3\",\r\n    \"email\": \"school3@example.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8070/api/v1/schools",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8070",
+          "path": [
+            "api",
+            "v1",
+            "schools"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "SCHOOLS_WITH_STUDENTS",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"School 3\",\r\n    \"email\": \"school3@example.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8070/api/v1/schools/with-students/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8070",
+          "path": [
+            "api",
+            "v1",
+            "schools",
+            "with-students",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "STUDENTS_SCHOOL_ID",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstname\": \"Pablo\",\r\n    \"lastname\": \"García\",\r\n    \"email\": \"pablo.garcia@email.com\",\r\n    \"schoolId\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8090/api/v1/students/school/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "api",
+            "v1",
+            "students",
+            "school",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "STUDENTS",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstname\": \"Pablo\",\r\n    \"lastname\": \"García\",\r\n    \"email\": \"pablo.garcia@email.com\",\r\n    \"schoolId\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8090/api/v1/students",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "api",
+            "v1",
+            "students"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
